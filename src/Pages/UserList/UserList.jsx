@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BsCamera } from "react-icons/bs";
 import Swal from "sweetalert2";
 
@@ -71,11 +71,11 @@ const UsersList = () => {
 
   return (
     <div className="mt-28 py-20 bg-slate-900">
-      <div className="user-form">
-        <h2 className="text-5xl text-center font-bold mb-20 text-orange-500">
+      <div data-aos="fade-up">
+        <h2 className="text-4xl md:text-5xl lg:text-5xl text-center font-bold mb-20 text-orange-500">
           Add Users
         </h2>
-        <div className="w-6/12 mx-auto ">
+        <div className="w-11/12 md:w-6/12 lg:w-7/12 mx-auto ">
           <form onSubmit={handleAddUser}>
             <div className="flex gap-8">
               <input
@@ -102,18 +102,18 @@ const UsersList = () => {
                 type="text"
                 name="address"
                 placeholder="Address"
-                className="w-full py-2 my-5 rounded-xl pl-5 text-xl font-semibold border-0 outline-orange-500"
+                className="w-full py-2 md:my-5 lg:my-5 rounded-xl pl-5 text-xl font-semibold border-0 outline-orange-500"
               />
               <input
                 type="text"
                 name="company"
                 placeholder="Company"
-                className="w-full my-5 rounded-xl pl-5 text-xl font-semibold border-0 outline-orange-500"
+                className="w-full my-5 rounded-xl py-2  pl-5 text-xl font-semibold border-0 outline-orange-500"
               />
             </div>
 
             {/* Upload your picture */}
-            <div className="mt-6 absolute md:static right-0 bottom-0">
+            <div className="mt-6">
               <input
                 id="picture"
                 name="picture"
@@ -133,8 +133,8 @@ const UsersList = () => {
             </div>
             <div className="flex justify-center">
               <button
-                className="w-1/4 text-white shadow-lg border-0 border-b-4 hover:shadow-orange-700 text-sm md:text-xl py-2 md:py-2 rounded-xl 
-          md:mt-6 font-medium hover:bg-orange-500"
+                className="w-1/4 mt-12 md:mt-6 lg:mt-8 text-white shadow-lg border-0 border-b-4 hover:shadow-orange-700 text-sm md:text-xl py-2 md:py-2 rounded-xl 
+          font-medium hover:bg-orange-500"
                 type="submit"
               >
                 Add User

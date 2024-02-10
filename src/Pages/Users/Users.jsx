@@ -31,20 +31,25 @@ const UsersPage = () => {
   });
 
   return (
-    <div className="my-20 mx-20">
-      <h2 className="text-5xl text-center font-bold mb-20 text-orange-500">
+    <div className="my-20 md:mx-20 lg:mx-28">
+      <h2
+        data-aos="fade-down"
+        className="text-5xl text-center font-bold mb-20 text-orange-500"
+      >
         Users
       </h2>
-      <div className="flex justify-center gap-8 mb-12">
+      <div className="md:flex lg:flex justify-center gap-8 mb-12 mx-28">
         <input
+          data-aos="fade-right"
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search By User Name"
-          className="py-2 pl-2 outline-orange-600 text-xl shadow-lg rounded-2xl"
+          className="py-2 pl-2 outline-orange-600 text-xl shadow-lg rounded-2xl mb-5 md:mb-0 lg:mb-0"
         />
         <select
-          className="border-0 py-2 pl-2 outline-orange-600 text-2xl shadow-lg rounded-2xl "
+          data-aos="fade-left"
+          className="border-0 py-2 pl-2 outline-orange-600 text-xl shadow-lg rounded-2xl "
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
         >

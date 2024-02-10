@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const UserCard = ({ user }) => {
   const { id, image, firstName, lastName, email, address, company } = user;
   return (
-    <div className=" rounded-lg shadow-md m-6">
+    <div data-aos="fade-up" className=" rounded-lg shadow-md m-6">
       <div className="bg-slate-900 p-8 rounded-xl text-white shadow-xl">
         <img
           src={image}
